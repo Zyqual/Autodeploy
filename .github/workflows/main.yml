@@ -16,7 +16,7 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore  
       - name: Publish
-        run: dotnet publish "/AutoDeploy/Autodeploy/Autodeploy.csproj" -c Release -o app
+        run: dotnet publish "/AutoDeploy/Autodeploy/Autodeploy.csproj"
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3        
         with:
